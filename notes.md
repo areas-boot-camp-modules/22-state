@@ -136,27 +136,60 @@ export const reducer = (state = initialState, { type }) => {
 ```
 
 ---
-## 22.2: 
+## 22.2: MERN Review
 - 
 
-### 
-- 
-
----
-### 
-- 
+### React Hooks Review
+- Don’t put a hook in a for loop or some other conditional.
+- React will throw an error.
+- Hooks should be top-level.
 
 ---
-### 
-- 
+### React Router Review
+- Use a Link component, instead of a normal link. Otherwise, the entire page will reload (which is what we don’t want).
+- React Router gets it all to work.
+
+```
+<Router>
+	<Routes>
+		<Route
+			path...
+		>
+		</Route>
+	</Routes>
+</Router>
+```
 
 ---
-### 
-- 
+### Apollo Review
+- Resolvers and typeDefs.
+- Apollo servers start in the back end with resolvers and typeDefs.
+- Then on the front end, you define your queries and mutations.
+- You use `useQuery` and `useMutations` on the React side to bring it all together.
+
+```
+const { gql } from "@apollo/client"
+
+...
+```
 
 ---
-### 
-- 
+### JWT Review
+- We don’t have access to cookies with React.
+- We put the token in the header instead.
+- Very complicated.
+- The important part is sign token, verify, and sign.
+- Not as important to know about setting up GraphQL with JWT. You set it up once, and move on.
+- JWT is more important as a whole.
+
+---
+### useReducer Review
+- Reducer let you do something global?
+- Reducers are functions.
+- Returns state as a new object.
+- It’s a “mega” version of useState.
+- What’s dispatch?
+- Dispatch is a “fancy setFoo.”
 
 ---
 ## 22.3: 
