@@ -192,27 +192,47 @@ const { gql } from "@apollo/client"
 - Dispatch is a “fancy setFoo.”
 
 ---
-## 22.3: 
-- 
+## 22.3: MERN and Redux
 
 ---
-### 
-- 
+### typeDefs
+- It’s kind of like a schema?
+- There are types and query types.
+- Query types take parameters.
+- And input.
+- And mutation for changes.
+- Queries are meant to return data, mutations change it.
+- Inputs are put in to a method.
+- Queries and mutation are used in resolvers.
+- That’s how GraphQL works.
+- Are resolvers like APIs?
+- This is the server side.
+- The client is just GraphQL queries that get data it needs.
+
+```
+const typeDefs = gql`
+	type Author {
+		
+	}
+`
+```
 
 ---
-### 
-- 
+### Stripe
+- The standard for payments.
 
 ---
-### 
-- 
+### Actions, Reducers
+- Reducers taking invariables and spit them out. It doesn’t change them.
+- A reducer is a complicated useState hook. They can update and delete things, for example.
 
 ---
-### 
-- 
+### Continuous Deployment
+- CI/CD.
+- Hard to truly pull off.
 
 ---
-### 
+### Mini Project
 - 
 
 ---
